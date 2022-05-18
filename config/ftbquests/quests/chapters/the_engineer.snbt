@@ -1,0 +1,306 @@
+{
+	id: "707C13E9F5964152"
+	group: "229EFEB70387AF4B"
+	order_index: 0
+	filename: "the_engineer"
+	title: "The Engineer"
+	icon: "kubejs:profession_token_engineer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "You've taken your first step towards being a nerd."
+			description: ["This token signifies that you have had an education at some point. Congratulations."]
+			id: "54B16F148174D032"
+			tasks: [{
+				id: "14ACCC411CC384CC"
+				type: "item"
+				item: "kubejs:profession_token_engineer"
+				consume_items: true
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"The machines you had made in class weren't made out of any normal metals. They were built from a material called Andesite Alloy."
+				"An alloy kiln would be a good start to manufacturing the metal."
+			]
+			dependencies: ["130FE2E261FE3CD8"]
+			id: "1C5970F9DE297D08"
+			tasks: [{
+				id: "1101B975C3816634"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["You recall that the most important asset to an engineer is their tools. A hammer is a great start."]
+			dependencies: ["54B16F148174D032"]
+			id: "130FE2E261FE3CD8"
+			tasks: [{
+				id: "780CB5E25E39EA0A"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			description: [
+				"To make the refined contraptions you desire you need to have refined materials. The first step is making a coke oven for oil to lather on your wood."
+				"Simply make a 3x3 and tap the bricks with the hammer."
+			]
+			dependencies: ["130FE2E261FE3CD8"]
+			id: "6B59713F6B313192"
+			tasks: [{
+				id: "2C89F8DB8E748E14"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["1C5970F9DE297D08"]
+			id: "0A6E4CF927ACCBBA"
+			tasks: [{
+				id: "6287B108EDF100A2"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["6B59713F6B313192"]
+			id: "5D464AC75F159329"
+			tasks: [{
+				id: "2DA8465540B1E00C"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+				count: 8L
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.5d
+			dependencies: [
+				"0A6E4CF927ACCBBA"
+				"5D464AC75F159329"
+			]
+			id: "7793AFE0F7C866CB"
+			tasks: [
+				{
+					id: "47304903F9101AB4"
+					type: "item"
+					item: "create:cogwheel"
+					count: 16L
+				}
+				{
+					id: "163A9BC566211121"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 6L
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			dependencies: ["7793AFE0F7C866CB"]
+			id: "4EACE11243D4F659"
+			tasks: [{
+				id: "41FE64BF27D20540"
+				type: "item"
+				item: "create:water_wheel"
+				count: 3L
+			}]
+		}
+		{
+			x: 5.25d
+			y: 8.25d
+			dependencies: ["5170D302E8202DB0"]
+			size: 1.5d
+			id: "5BA09647390DDD14"
+			tasks: [{
+				id: "583644828F0805EA"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+		}
+		{
+			title: "Assembling the Toolkit"
+			x: 5.0d
+			y: 3.0d
+			dependencies: ["4EACE11243D4F659"]
+			id: "64E7C630BE142D3B"
+			tasks: [
+				{
+					id: "4B6A02A3AFF14AAC"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "51B44C405382B9DF"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "615C646275910DEC"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "619356951E34D8CF"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["64E7C630BE142D3B"]
+			id: "28BBFDE1027D734D"
+			tasks: [
+				{
+					id: "0D2415A0DD871AD0"
+					type: "item"
+					item: "immersiveengineering:blastbrick"
+					count: 27L
+				}
+				{
+					id: "33024D07A2D47A65"
+					type: "item"
+					item: "immersiveengineering:ingot_steel"
+					count: 3L
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			dependencies: ["28BBFDE1027D734D"]
+			id: "08EF60AC3C63151D"
+			tasks: [
+				{
+					id: "087F8F818AB59405"
+					type: "item"
+					item: "create:empty_blaze_burner"
+				}
+				{
+					id: "2AC3DA2858E8C9CB"
+					type: "dimension"
+					dimension: "minecraft:the_nether"
+				}
+				{
+					id: "56A5743D84C44221"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			dependencies: ["08EF60AC3C63151D"]
+			id: "55EA0902B84A7846"
+			tasks: [{
+				id: "04DBFD3C9BFB7BE8"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.5d
+			dependencies: ["64E7C630BE142D3B"]
+			optional: true
+			id: "5C6D1EC09C8D92DB"
+			tasks: [
+				{
+					id: "4FF78A26218419A4"
+					type: "item"
+					item: "create:depot"
+				}
+				{
+					id: "7BB183FBD9EDACA0"
+					type: "item"
+					item: "createaddition:rolling_mill"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: ["55EA0902B84A7846"]
+			id: "5517EE486D93E8F4"
+			tasks: [{
+				id: "18EED9158C84AA98"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.0d
+			dependencies: ["64E7C630BE142D3B"]
+			optional: true
+			id: "620156CBF868943F"
+			tasks: [
+				{
+					id: "345B76A9D76ADF3B"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+				{
+					id: "0C05AEC290102AB2"
+					type: "item"
+					item: "create:mechanical_drill"
+				}
+				{
+					id: "1B32A24A7BF014D6"
+					type: "item"
+					item: "create:mechanical_harvester"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 7.0d
+			dependencies: ["55EA0902B84A7846"]
+			id: "0DB0DF25AB34F924"
+			tasks: [{
+				id: "40FF8AC38CBF8437"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.0d
+			dependencies: ["0DB0DF25AB34F924"]
+			id: "5170D302E8202DB0"
+			tasks: [{
+				id: "429A81FB79D6813D"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+		}
+	]
+}

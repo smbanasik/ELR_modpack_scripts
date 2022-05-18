@@ -1,0 +1,163 @@
+{
+	id: "27E4B16C7241ADF7"
+	group: "36A4E430F88DF8E0"
+	order_index: 0
+	filename: "the_introduction"
+	title: "The Introduction"
+	icon: {
+		id: "occultism:chalk_white"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome!"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Wood pickaxes are stale so here's something to skip that"
+			description: ["Welcome to Everlast Reborn, a pack revolving around professions and interacting with your community."]
+			id: "064B78803F26FEEA"
+			tasks: [{
+				id: "13A0D93348847E2E"
+				type: "checkmark"
+				title: "Start Here"
+			}]
+			rewards: [{
+				id: "7CEB0AAD1571E6F7"
+				type: "item"
+				item: {
+					id: "minecraft:stone_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Questing with origins"
+			x: 2.5d
+			y: 0.0d
+			description: [
+				"If your class is complicated, expect a questline to help you out."
+				"Beyond that, your profession should have given you a token which you can use to unlock a questline."
+			]
+			dependencies: ["064B78803F26FEEA"]
+			hide: false
+			id: "49ED620ED03CAAEB"
+			tasks: [{
+				id: "7FA8C23DB9857453"
+				type: "checkmark"
+				title: "Makes sense to me"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["Putting three gravel together will get you flint in case you hate RNG"]
+			id: "7E8FD3CBB13B77BC"
+			tasks: [{
+				id: "3C001F914706B0A5"
+				type: "item"
+				item: "minecraft:flint"
+			}]
+			rewards: [{
+				id: "6089ED245E7CA9DD"
+				type: "item"
+				item: "minecraft:flint"
+				count: 4
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			description: ["If you're going to be using a lot of wood, make this. It's similar to a stone cutter but it will make wooden products instead."]
+			dependencies: ["4B74E4D47876A753"]
+			id: "5842DB0D6B9CF24A"
+			tasks: [{
+				id: "3500E5C9513A7E60"
+				type: "item"
+				item: "corail_woodcutter:oak_woodcutter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			description: ["While drawers store only one stack of item, they store a lot of it. Great for stashing ingots or large amounts of cobblestone."]
+			dependencies: ["4B74E4D47876A753"]
+			id: "42DCFD172FF52950"
+			tasks: [{
+				id: "5DFFD8C72F4C9E97"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_4"
+			}]
+		}
+		{
+			title: "Lootr"
+			icon: "minecraft:chest"
+			x: 4.5d
+			y: 3.0d
+			description: [
+				"If you find a gilded chest that turns blue after you open it, that's a chest from Lootr."
+				"It's instanced loot per player so you don't have to worry about sharing."
+			]
+			id: "3E9FEA18F7FC277D"
+			tasks: [{
+				id: "4C26E4B3E4EEE147"
+				type: "checkmark"
+				title: "Cool!"
+			}]
+		}
+		{
+			title: "Profession tokens?"
+			icon: "kubejs:profession_token_engineer"
+			x: 4.5d
+			y: 1.0d
+			subtitle: "Kinda cringe game design"
+			description: [
+				"A token represents your background education on a certain topic. You are not restricted in any item crafting or usage with these tokens, only questlines."
+				"(Not implemented) You'll be able to get more by talking to NPC's or having another player teach you."
+			]
+			dependencies: ["49ED620ED03CAAEB"]
+			id: "7AA892F62C9B2A6C"
+			tasks: [{
+				id: "2EE25292F8AB26AA"
+				type: "checkmark"
+				title: "Tokens"
+			}]
+		}
+		{
+			title: "Timber!"
+			x: 1.5d
+			y: 1.5d
+			description: ["Axes will fell entire trees when used. Very useful for larger trees."]
+			id: "4B74E4D47876A753"
+			tasks: [{
+				id: "214D25AD8F7BAEC7"
+				type: "item"
+				item: {
+					id: "minecraft:stone_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			id: "51F3462401DECBE8"
+			tasks: [{
+				id: "02CB381D950AFA6B"
+				type: "checkmark"
+				title: "VOICECHAT"
+			}]
+		}
+	]
+}

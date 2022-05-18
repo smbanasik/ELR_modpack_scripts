@@ -1,0 +1,1101 @@
+{
+	id: "2EF5346EBE6E5EC9"
+	group: "229EFEB70387AF4B"
+	order_index: 1
+	filename: "the_mage"
+	title: "The Mage"
+	icon: "kubejs:profession_token_mage"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["This token signifies your knowledge in the ways of magic."]
+			id: "19BA4B35C1C8968B"
+			tasks: [{
+				id: "3AA07C8D80B2B307"
+				type: "item"
+				item: "kubejs:profession_token_mage"
+				consume_items: true
+			}]
+		}
+		{
+			title: "Otherworldly Ore"
+			x: 2.0d
+			y: 1.5d
+			subtitle: "Save that cow for when you have a scythe"
+			description: ["What a peculiar ore. Deep down you know that it is unnatural. Perhaps placing it near a book will imbue the unnatural magic into the scripture."]
+			dependencies: ["19BA4B35C1C8968B"]
+			id: "2D22B0F68337068C"
+			tasks: [{
+				id: "637A1843D72B27D4"
+				type: "item"
+				item: "malum:processed_soulstone"
+			}]
+			rewards: [{
+				id: "73749142499167DC"
+				type: "item"
+				item: "minecraft:leather"
+			}]
+		}
+		{
+			title: "The path of a Soul Keeper"
+			x: 4.0d
+			y: 2.5d
+			description: ["This book is your guide to the spirit magic known as Malum"]
+			dependencies: ["2D22B0F68337068C"]
+			id: "32837775984C7549"
+			tasks: [{
+				id: "1C841160916CFDBD"
+				type: "item"
+				item: "malum:encyclopedia_arcana"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			description: ["With the materials you have gathered before you can create the ultimate tool of the Mage, a spell book."]
+			dependencies: ["2B182A699451B2D6"]
+			id: "25F53519CC78C8D5"
+			tasks: [{
+				id: "009D694DB99DFBE8"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+		}
+		{
+			title: "The path of the Mage"
+			x: -2.0d
+			y: -1.0d
+			description: [
+				"Lapis. A magical element. Through some dimensional mishap, putting the blue gem next to a book results in the worn notes of an old scholar."
+				"You'll need a dowsing rod to search for amethyst nodes. Grab as much of the purple gem as you can, but do not break the budding nodes."
+			]
+			dependencies: ["19BA4B35C1C8968B"]
+			id: "47B3B3B60F333445"
+			tasks: [
+				{
+					id: "3E88A1EB96598077"
+					type: "item"
+					item: {
+						id: "ars_nouveau:dowsing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7D2A4C40FE98047D"
+					type: "item"
+					item: "ars_nouveau:worn_notebook"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			description: [
+				"Using the blueprints found in the notebook, you've created this. An imbuement chamber."
+				"It draws from some natural energy called Source. Placing an amethyst inside should give you something great."
+			]
+			dependencies: ["47B3B3B60F333445"]
+			id: "7CB3E1689FE7F654"
+			tasks: [
+				{
+					id: "491F586834DF224B"
+					type: "item"
+					item: "ars_nouveau:imbuement_chamber"
+				}
+				{
+					id: "7F34A31B9F779DD0"
+					type: "item"
+					item: "ars_nouveau:source_gem"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -3.5d
+			description: [
+				"The source gem! A marvelous display of magical capabilities. You can use it to make Arcane Stone for the next step."
+				"More complex magical contraptions require an alloy called Brass. Copper on the pedestal and zinc in the chamber."
+			]
+			dependencies: ["7CB3E1689FE7F654"]
+			id: "2B182A699451B2D6"
+			tasks: [
+				{
+					id: "162A54ACBDB84C0E"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+				}
+				{
+					id: "70F300984782A5EA"
+					type: "item"
+					item: "create:brass_ingot"
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: -4.0d
+			dependencies: ["25F53519CC78C8D5"]
+			id: "27E0AC7B373700E1"
+			tasks: [{
+				id: "6C74C90E8517EF97"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -1.5d
+			dependencies: ["25F53519CC78C8D5"]
+			id: "2B2D98EF00B24C57"
+			tasks: [{
+				id: "37B9F998E2662DAD"
+				type: "item"
+				item: "ars_nouveau:source_jar"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.5d
+			dependencies: ["2B2D98EF00B24C57"]
+			id: "40AFE979B957E0F2"
+			tasks: [{
+				id: "2D81DC2E63079C3D"
+				type: "item"
+				item: "ars_nouveau:agronomic_sourcelink"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 2.5d
+			dependencies: [
+				"40AFE979B957E0F2"
+				"7D5568382B1846E5"
+			]
+			id: "4C00765A69618F25"
+			tasks: [{
+				id: "40ABAA8E2369EE01"
+				type: "item"
+				item: "ars_nouveau:enchanting_apparatus"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 3.0d
+			dependencies: ["4C00765A69618F25"]
+			id: "534DF0AE48D63067"
+			tasks: [{
+				id: "7842CE6B6765BCD2"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+			}]
+		}
+		{
+			title: "The path of a Spirit Summoner"
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["19BA4B35C1C8968B"]
+			id: "4293755E21E80FE3"
+			tasks: [
+				{
+					id: "2A481996CB6B5237"
+					type: "item"
+					item: "occultism:datura_seeds"
+				}
+				{
+					id: "6FDFA985F877D03F"
+					type: "item"
+					item: "occultism:dictionary_of_spirits"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["4293755E21E80FE3"]
+			id: "0C9EE29023CE77BA"
+			tasks: [
+				{
+					id: "0B949B21BF5DF312"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6257DAD2900EAF1F"
+					type: "item"
+					item: "occultism:datura"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 4.5d
+			dependencies: ["0C9EE29023CE77BA"]
+			id: "7D5568382B1846E5"
+			tasks: [{
+				id: "18D5FE572DC540AB"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			dependencies: ["7D5568382B1846E5"]
+			id: "63073A86D8E0E00F"
+			tasks: [{
+				id: "50229D3BC7EAF380"
+				type: "item"
+				item: {
+					id: "occultism:divination_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "The path of the Druid"
+			x: 1.5d
+			y: -2.5d
+			subtitle: "If you need berries, chop down a tree. A big one."
+			description: ["Every druid begins the same way, collecting herbs and plants. With these you can inscribe your findings into a tablet."]
+			dependencies: ["19BA4B35C1C8968B"]
+			id: "7E29879E32572CCF"
+			tasks: [
+				{
+					id: "5223C1D80C8C387B"
+					type: "item"
+					item: "rootsclassic:runic_tablet"
+				}
+				{
+					id: "50A11DD8A003F448"
+					type: "item"
+					item: "rootsclassic:old_root"
+				}
+				{
+					id: "0B89C67FE59D849F"
+					type: "item"
+					item: "rootsclassic:verdant_sprig"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			dependencies: ["63073A86D8E0E00F"]
+			id: "6073D8FEADD45785"
+			tasks: [
+				{
+					id: "030CD69091D9B0A9"
+					type: "item"
+					item: "occultism:otherstone"
+				}
+				{
+					id: "2700CFDCF8DFD6DA"
+					type: "item"
+					item: "occultism:otherworld_log"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			dependencies: ["6073D8FEADD45785"]
+			id: "45078A1AE8AF5BA4"
+			tasks: [
+				{
+					id: "64CE743D82FDB312"
+					type: "item"
+					item: "occultism:otherworld_ashes"
+				}
+				{
+					id: "3252B295CD12999A"
+					type: "item"
+					item: "occultism:burnt_otherstone"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 7.5d
+			dependencies: ["45078A1AE8AF5BA4"]
+			id: "2E7F2F124CDF1274"
+			tasks: [{
+				id: "446955677DB343ED"
+				type: "item"
+				item: "occultism:chalk_white_impure"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 9.0d
+			dependencies: ["2E7F2F124CDF1274"]
+			id: "03D389B361832819"
+			tasks: [
+				{
+					id: "6C252784FFC85785"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3A3CCFFAF388B902"
+					type: "item"
+					item: "occultism:brush"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 7.0d
+			dependencies: ["1EAED1E5131F90C6"]
+			id: "574E41E781DD055E"
+			tasks: [
+				{
+					id: "7A057D20510F7C95"
+					type: "item"
+					item: {
+						id: "occultism:butcher_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4672229E79995461"
+					type: "item"
+					item: "occultism:tallow"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 9.5d
+			dependencies: ["574E41E781DD055E"]
+			id: "29F9EFE4AB02DFB3"
+			tasks: [{
+				id: "66570387AAEAA4FD"
+				type: "item"
+				item: "occultism:candle_white"
+				count: 4L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 8.0d
+			dependencies: ["6073D8FEADD45785"]
+			id: "717C0770BF31F1D2"
+			tasks: [
+				{
+					id: "01222BF2BB7BE0E2"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+					count: 5L
+				}
+				{
+					id: "54C76428ED8F8751"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			dependencies: ["0C9EE29023CE77BA"]
+			id: "1EAED1E5131F90C6"
+			tasks: [{
+				id: "1060704DB322FEB5"
+				type: "item"
+				item: "occultism:purified_ink"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.5d
+			dependencies: ["1EAED1E5131F90C6"]
+			id: "0588F583DAF3047A"
+			tasks: [{
+				id: "18EFEC63066A7214"
+				type: "item"
+				item: "occultism:book_of_binding_foliot"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 10.5d
+			dependencies: [
+				"29F9EFE4AB02DFB3"
+				"717C0770BF31F1D2"
+				"03D389B361832819"
+				"0588F583DAF3047A"
+			]
+			id: "340AE5A3C20D633A"
+			tasks: [{
+				id: "5E2B64CC9F469E4F"
+				type: "item"
+				item: "occultism:iron_dust"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 10.5d
+			dependencies: ["340AE5A3C20D633A"]
+			id: "62E64B92CA91B305"
+			tasks: [{
+				id: "7BA4708E385EF5FB"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 13.0d
+			dependencies: ["340AE5A3C20D633A"]
+			id: "5CAABD799A5A503E"
+			tasks: [{
+				id: "14339825709247BB"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -11.0d
+			y: 6.0d
+			dependencies: ["547495878F8B66BD"]
+			id: "3CC0C306D72C3647"
+			tasks: [{
+				id: "03F0D92698AB9C9B"
+				type: "checkmark"
+				title: "MORE CIRCLES"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 7.0d
+			dependencies: ["1977598CD1F04724"]
+			id: "547495878F8B66BD"
+			tasks: [{
+				id: "72C8098A2FFC3C2F"
+				type: "item"
+				item: {
+					id: "occultism:chalk_purple"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 6.5d
+			dependencies: ["7D5568382B1846E5"]
+			id: "4CC7FDC100642A47"
+			tasks: [{
+				id: "7DC4DDD8DCD2EE73"
+				type: "item"
+				item: "occultism:spirit_attuned_crystal"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 8.0d
+			dependencies: ["5AE2FC9C01F268D0"]
+			id: "2B3DFEABE4768E87"
+			tasks: [{
+				id: "26B9324CF807C988"
+				type: "item"
+				item: "occultism:iesnium_ingot"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 9.0d
+			dependencies: ["3CC0C306D72C3647"]
+			id: "5AE2FC9C01F268D0"
+			tasks: [{
+				id: "6DA139153CDFA3E1"
+				type: "item"
+				item: {
+					id: "occultism:infused_pickaxe"
+					Count: 1b
+					tag: {
+						spiritName: "Crymures"
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -10.0d
+			y: 8.5d
+			dependencies: ["3CC0C306D72C3647"]
+			id: "2044CAC6B9B3C0A0"
+			tasks: [{
+				id: "008017C0FBA27E16"
+				type: "item"
+				item: {
+					id: "occultism:familiar_ring"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							hasFamiliar: 0b
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -13.0d
+			y: 6.5d
+			dependencies: [
+				"2B3DFEABE4768E87"
+				"3CC0C306D72C3647"
+			]
+			id: "3E15002ED98BDDD1"
+			tasks: [{
+				id: "520E97A42A4EF37A"
+				type: "item"
+				item: "occultism:dimensional_mineshaft"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 5.5d
+			dependencies: ["7DC2A1F79A030473"]
+			dependency_requirement: "one_completed"
+			id: "1977598CD1F04724"
+			tasks: [{
+				id: "30E26444272DAD1E"
+				type: "item"
+				item: "minecraft:end_stone"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 8.5d
+			dependencies: [
+				"62E64B92CA91B305"
+				"4CC7FDC100642A47"
+			]
+			id: "7DC2A1F79A030473"
+			tasks: [{
+				id: "5984B52E215D7E69"
+				type: "checkmark"
+				title: "Circles!"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 10.0d
+			id: "78AEF2A273C87D64"
+			tasks: [{
+				id: "0679FA7AAF3FC49F"
+				type: "item"
+				item: "minecraft:skeleton_skull"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.0d
+			dependencies: ["1EB8AA2A6FB82D21"]
+			id: "227C5316A13A7336"
+			tasks: [{
+				id: "695EBE6A46270BAD"
+				type: "item"
+				item: "rootsclassic:healing_poultice"
+			}]
+		}
+		{
+			title: "A mortar and pestle"
+			x: 1.0d
+			y: -4.5d
+			description: ["You realize that the herbs you've collected aren't being used to their full potential. The solution? Beating them with a rock to extract their essence."]
+			dependencies: ["7E29879E32572CCF"]
+			id: "1EB8AA2A6FB82D21"
+			tasks: [
+				{
+					id: "4BAD794702C534B4"
+					type: "item"
+					item: "rootsclassic:pestle"
+				}
+				{
+					id: "57ECE8DC07E51C24"
+					type: "item"
+					item: "rootsclassic:mortar"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -2.0d
+			description: ["With this blade built with nature, you may gentle remove shavings of bark for your uses."]
+			dependencies: ["7E29879E32572CCF"]
+			id: "15E3282E48651BB7"
+			tasks: [{
+				id: "484E54B89348F106"
+				type: "item"
+				item: {
+					id: "rootsclassic:bark_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			dependencies: ["1EB8AA2A6FB82D21"]
+			id: "2AAFD98967816B86"
+			tasks: [{
+				id: "46BE2B93D15A85D7"
+				type: "item"
+				item: "rootsclassic:imbuer"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.5d
+			dependencies: ["1EB8AA2A6FB82D21"]
+			id: "1E756989C498062D"
+			tasks: [{
+				id: "23F13DC3CD01726F"
+				type: "item"
+				item: "rootsclassic:spell_powder"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.5d
+			dependencies: ["2AAFD98967816B86"]
+			id: "3E8B0D5A3B08EDB1"
+			tasks: [{
+				id: "68E3930BB5CC4B99"
+				type: "item"
+				item: "rootsclassic:staff"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -8.0d
+			dependencies: ["2AAFD98967816B86"]
+			id: "79BB2CFA8A670653"
+			tasks: [
+				{
+					id: "33DDA19B867F7205"
+					type: "item"
+					item: "rootsclassic:altar"
+				}
+				{
+					id: "53F0A4260D5D043F"
+					type: "item"
+					item: "rootsclassic:brazier"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -11.0d
+			dependencies: ["3584343AE89AFCC8"]
+			id: "35A6453B79D447D6"
+			tasks: [
+				{
+					id: "7BE72D61B78A83B6"
+					type: "item"
+					item: {
+						id: "rootsclassic:living_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "20C5A644CAB5B173"
+					type: "item"
+					item: {
+						id: "rootsclassic:living_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0EDAB936FCDA2CE4"
+					type: "item"
+					item: {
+						id: "rootsclassic:living_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -10.0d
+			dependencies: ["79BB2CFA8A670653"]
+			id: "145029138D3F2BDB"
+			tasks: [{
+				id: "1E005F93EBA76088"
+				type: "item"
+				item: "rootsclassic:mundane_standing_stone"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -12.0d
+			dependencies: ["145029138D3F2BDB"]
+			id: "3584343AE89AFCC8"
+			tasks: [{
+				id: "42B8ECCC67CE7C81"
+				type: "item"
+				item: "rootsclassic:attuned_standing_stone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -13.5d
+			dependencies: ["3584343AE89AFCC8"]
+			id: "7B8CACA808CD4241"
+			tasks: [{
+				id: "593B574183C4D255"
+				type: "item"
+				item: "rootsclassic:crystal_staff"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -14.5d
+			dependencies: ["3584343AE89AFCC8"]
+			id: "5EC000F73ADF87D8"
+			tasks: [
+				{
+					id: "38994C63586A2461"
+					type: "item"
+					item: {
+						id: "rootsclassic:sylvan_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "77940978E5E9C450"
+					type: "item"
+					item: {
+						id: "rootsclassic:sylvan_robe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7276D4A14DE78F10"
+					type: "item"
+					item: {
+						id: "rootsclassic:sylvan_tunic"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "60D609C59CD19297"
+					type: "item"
+					item: {
+						id: "rootsclassic:sylvan_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -10.0d
+			dependencies: ["3584343AE89AFCC8"]
+			id: "12A029ADB21D7605"
+			tasks: [
+				{
+					id: "0258C08CF8FCF47A"
+					type: "item"
+					item: {
+						id: "rootsclassic:wildwood_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7EE54CE78601EF6B"
+					type: "item"
+					item: {
+						id: "rootsclassic:wildwood_plate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7B9F41E161F7CE96"
+					type: "item"
+					item: {
+						id: "rootsclassic:wildwood_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2880610C0541DDF6"
+					type: "item"
+					item: {
+						id: "rootsclassic:wildwood_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -14.5d
+			dependencies: ["3584343AE89AFCC8"]
+			id: "01A0FC9914D3D250"
+			tasks: [
+				{
+					id: "33D10064C15B487B"
+					type: "item"
+					item: "rootsclassic:grower_standing_stone"
+				}
+				{
+					id: "57DE4F11804B886D"
+					type: "item"
+					item: "rootsclassic:healer_standing_stone"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -13.0d
+			dependencies: ["3584343AE89AFCC8"]
+			id: "5C813D205A66B4DD"
+			tasks: [{
+				id: "3971AD1C23D5AC25"
+				type: "item"
+				item: "rootsclassic:runic_focus"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -15.5d
+			dependencies: ["5C813D205A66B4DD"]
+			id: "25A0EC6678CDA4E2"
+			tasks: [{
+				id: "2CD8BC3F1A3EBD43"
+				type: "item"
+				item: {
+					id: "rootsclassic:engraved_blade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "A druid learns about Elves"
+			x: -1.0d
+			y: -10.0d
+			description: [
+				"To make a petal apothecary, you need a tier 1 altar, so have 9 mundane stones surrounding it spaced two blocks apart."
+				"Next, use two arcane stone and a piece of cobble stone on the altar. Finally, burn two floral fertilizer and a source gem as incense."
+			]
+			dependencies: ["145029138D3F2BDB"]
+			id: "7AE461A076583DB4"
+			tasks: [
+				{
+					id: "00DC9C84D3FF3DB3"
+					type: "item"
+					item: "botania:apothecary_default"
+				}
+				{
+					id: "167109F10F9124C2"
+					type: "item"
+					item: "botania:lexicon"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -12.0d
+			dependencies: ["7AE461A076583DB4"]
+			id: "5F4CA6357A6C468E"
+			tasks: [{
+				id: "7FB1C2304A9704C2"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -8.5d
+			dependencies: ["79BB2CFA8A670653"]
+			id: "7A8FF1E3F862743D"
+			tasks: [
+				{
+					id: "3E9550D2B894290F"
+					type: "item"
+					item: "rootsclassic:infernal_bulb"
+				}
+				{
+					id: "11DABF002B07E4B4"
+					type: "item"
+					item: "rootsclassic:dragons_eye"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -10.5d
+			dependencies: ["5F4CA6357A6C468E"]
+			id: "562B5FBA5260977E"
+			tasks: [{
+				id: "41F0C68AB6DBA9C8"
+				type: "item"
+				item: "botania:livingwood"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -13.5d
+			dependencies: ["5F4CA6357A6C468E"]
+			id: "67365E94BB9F8947"
+			tasks: [{
+				id: "1EEB5B4188CAD0CE"
+				type: "item"
+				item: "botania:livingrock"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -9.0d
+			dependencies: ["562B5FBA5260977E"]
+			id: "2DDDD726063D3634"
+			tasks: [{
+				id: "5DC31FE386D97856"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -13.0d
+			dependencies: ["67365E94BB9F8947"]
+			id: "726993A09527E290"
+			tasks: [{
+				id: "688B56C0F34CE55C"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -12.0d
+			dependencies: ["726993A09527E290"]
+			id: "48DA038767CCC1EC"
+			tasks: [{
+				id: "50A46C1B9644AEBA"
+				type: "item"
+				item: "botania:manasteel_ingot"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -9.5d
+			dependencies: ["562B5FBA5260977E"]
+			id: "529795BA468C3D4F"
+			tasks: [{
+				id: "4763B3E2A1FB1775"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -15.0d
+			dependencies: ["726993A09527E290"]
+			id: "70FD99BD314AF84A"
+			tasks: [{
+				id: "5C95B455AF2CEBF8"
+				type: "item"
+				item: "botania:endoflame"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -15.0d
+			dependencies: ["726993A09527E290"]
+			id: "7FD77BB125487A45"
+			tasks: [{
+				id: "17C314562461D5B3"
+				type: "item"
+				item: "botania:hydroangeas"
+			}]
+		}
+	]
+}

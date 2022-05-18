@@ -1,0 +1,214 @@
+{
+	id: "28A5993174D096EB"
+	group: "36A4E430F88DF8E0"
+	order_index: 1
+	filename: "village_artisan"
+	title: "Village Artisan"
+	icon: "minecraft:crafting_table"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The first step of making bank"
+			x: -2.5d
+			y: -3.5d
+			subtitle: "We all have to start somewhere"
+			description: [
+				"Where did you find your first coin? Was it by killing a mob? Trading goods? Loot?"
+				"Either way, it's a good start. You can exchange these at an ATM for better types of coins."
+			]
+			dependencies: ["64F476CC69B4EDC5"]
+			id: "7E43296EF0A08755"
+			tasks: [{
+				id: "674A1C504F173C71"
+				type: "item"
+				item: "lightmanscurrency:coin_copper"
+			}]
+		}
+		{
+			title: "The beginnings of Villager Trading"
+			x: -5.0d
+			y: -1.5d
+			subtitle: "All of the trades are scams."
+			description: ["Most villagers have no need for coins. They use emeralds as the basis for their magic. Because of this, the gem is their primary currency."]
+			dependencies: ["64F476CC69B4EDC5"]
+			id: "6CEC0087B8EB57EF"
+			tasks: [{
+				id: "07B27CCF3F32BF05"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			title: "Making a home"
+			x: -2.25d
+			y: -1.5d
+			subtitle: "It doesn't matter what the walls are made out of, if there's a crafting table next to a furnace, it's a home."
+			description: ["This questline is intended for exploring the economy and creative aspects of the pack. Enjoy!"]
+			size: 1.5d
+			id: "64F476CC69B4EDC5"
+			tasks: [
+				{
+					id: "1FC9372D19CC36D8"
+					type: "advancement"
+					advancement: "minecraft:adventure/sleep_in_bed"
+					criterion: ""
+				}
+				{
+					id: "76ACCC84425762DD"
+					type: "item"
+					item: "minecraft:crafting_table"
+				}
+				{
+					id: "23265D063DF11720"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -3.0d
+			id: "399EB2EBDC892289"
+			tasks: [{
+				id: "49FF7E939EAB1E7A"
+				type: "item"
+				item: "minecraft:fletching_table"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 0.0d
+			id: "7A58BB601C9748DA"
+			tasks: [{
+				id: "17896EA0D94C896B"
+				type: "item"
+				item: "minecraft:composter"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			dependencies: ["6C1A363A31CF98C6"]
+			id: "5761BAC577FEEF5A"
+			tasks: [{
+				id: "4A5D9EB07FD12E3B"
+				type: "item"
+				item: "lightmanscurrency:paygate"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -6.5d
+			dependencies: ["5B01E52ED62ED9DE"]
+			id: "3E63D0F23AAE594F"
+			tasks: [{
+				id: "2EDAAB9B60812E40"
+				type: "item"
+				item: "lightmanscurrency:atm"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			dependencies: ["7E43296EF0A08755"]
+			id: "6C1A363A31CF98C6"
+			tasks: [{
+				id: "29386894692B27EF"
+				type: "item"
+				item: "lightmanscurrency:trading_core"
+			}]
+		}
+		{
+			title: "Villagers can use coins?"
+			x: -4.5d
+			y: -4.0d
+			description: ["Some villagers will use coins to trade. ATM's will make bankers and Cash Registers will make cashiers."]
+			id: "329A939BB71E37BD"
+			tasks: [
+				{
+					id: "6BAFB2DD8B5C0CE4"
+					type: "item"
+					item: "lightmanscurrency:atm"
+				}
+				{
+					id: "78F906F88710A96D"
+					type: "item"
+					item: "lightmanscurrency:cash_register"
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: -1.5d
+			id: "057D72F3D02FA99D"
+			tasks: [{
+				id: "23045A561F1C4979"
+				type: "item"
+				item: "minecraft:loom"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			dependencies: ["7E43296EF0A08755"]
+			id: "76F337431496376F"
+			tasks: [{
+				id: "2B4D5A86E1061586"
+				type: "item"
+				item: {
+					id: "lightmanscurrency:wallet_copper"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Minting your own coins"
+			x: -3.5d
+			y: -5.0d
+			subtitle: "Might be illegal :)"
+			description: ["If you've been mining a lot, you'll notice that you have a lot of extra copper. Good news, it can be turned into coins"]
+			dependencies: ["7E43296EF0A08755"]
+			id: "5B01E52ED62ED9DE"
+			tasks: [{
+				id: "216C578DFD203C22"
+				type: "item"
+				item: "lightmanscurrency:coinmint"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -8.0d
+			dependencies: ["5761BAC577FEEF5A"]
+			id: "509C362DBD9759DA"
+			tasks: [{
+				id: "2302B97D671019FC"
+				type: "item"
+				item: "lightmanscurrency:ticket_machine"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.5d
+			dependencies: ["6C1A363A31CF98C6"]
+			id: "59026AA0FF008B99"
+			tasks: [{
+				id: "7DE2D8C57E1C66D1"
+				type: "item"
+				item: "lightmanscurrency:shelf_oak"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -9.0d
+			dependencies: ["59026AA0FF008B99"]
+			id: "04FF244225F2501B"
+			tasks: [{
+				id: "05EAE678C6528BBD"
+				type: "item"
+				item: "lightmanscurrency:cash_register"
+			}]
+		}
+	]
+}

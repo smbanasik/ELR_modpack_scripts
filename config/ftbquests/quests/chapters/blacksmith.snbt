@@ -1,0 +1,72 @@
+{
+	id: "5E88B7ECECD9E464"
+	group: "229EFEB70387AF4B"
+	order_index: 5
+	filename: "blacksmith"
+	title: "Blacksmith"
+	icon: "kubejs:profession_token_blacksmith"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["3E46FF965F8FC38F"]
+			id: "2BC393537D8052F0"
+			tasks: [{
+				id: "6216B4F040A395F6"
+				type: "item"
+				item: {
+					id: "silentgear:blueprint_package"
+					Count: 1b
+					tag: {
+						silentlib.LootContainer: {
+							LootTable: "silentgear:starter_blueprints"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["2BC393537D8052F0"]
+			id: "398E607C6B4424B3"
+			tasks: [{
+				id: "47EFD101D3BAEC6C"
+				type: "item"
+				item: {
+					id: "silentgear:knife_blade"
+					Count: 1b
+					tag: {
+						Materials: [{
+							ID: "silentgear:example"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["398E607C6B4424B3"]
+			id: "59EFE459A3796458"
+			tasks: [{
+				id: "24911020AF349DF1"
+				type: "item"
+				item: "silentgear:template_board"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "3E46FF965F8FC38F"
+			tasks: [{
+				id: "04B7965CF0C62E0D"
+				type: "item"
+				item: "kubejs:profession_token_blacksmith"
+				consume_items: true
+			}]
+		}
+	]
+}

@@ -1,0 +1,110 @@
+{
+	id: "3FCFA7B5C2EE6E52"
+	group: "1893967678EA1447"
+	order_index: 1
+	filename: "the_underling"
+	title: "The Underling"
+	icon: "minecraft:crying_obsidian"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Hell."
+			icon: "minecraft:crying_obsidian"
+			x: 0.5d
+			y: 0.0d
+			description: ["Yeah you start in the nether as an underling. Your biggest priority is food."]
+			id: "0F91274AE400D503"
+			tasks: [{
+				id: "14AFF9D30180251A"
+				type: "checkmark"
+				title: "I asked for this..."
+			}]
+		}
+		{
+			title: "Wood"
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"As an underling you have limited options for wood, but it's the first step towards being successful."
+				"Item Filters isn't letting me use it's OR filter, so you *have* to find crimson for now"
+			]
+			dependencies: ["0F91274AE400D503"]
+			id: "173664FAD964FAD9"
+			tasks: [{
+				id: "5342920D618B0E40"
+				type: "item"
+				item: "minecraft:crimson_stem"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["173664FAD964FAD9"]
+			id: "47875B9A42E4A3BC"
+			tasks: [{
+				id: "64B698FB339B0F23"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["173664FAD964FAD9"]
+			id: "257712382CB46027"
+			tasks: [{
+				id: "47D17A96F885081F"
+				type: "item"
+				item: "quark:blackstone_furnace"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			dependencies: ["47875B9A42E4A3BC"]
+			id: "276C6402369782AA"
+			tasks: [{
+				id: "00BDA877D33C2104"
+				type: "item"
+				item: "silentgear:raw_crimson_iron"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			dependencies: [
+				"257712382CB46027"
+				"276C6402369782AA"
+			]
+			id: "615B1D556BD2EC60"
+			tasks: [{
+				id: "7172B447D6E1D3FA"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			dependencies: ["276C6402369782AA"]
+			id: "307922BD48B97E43"
+			tasks: [{
+				id: "122E1965AABDD7B4"
+				type: "item"
+				item: "silentgear:crimson_iron_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			dependencies: ["173664FAD964FAD9"]
+			id: "63FCADC3EB883487"
+			tasks: [{
+				id: "106770C2CF50E757"
+				type: "item"
+				item: "minecraft:mushroom_stew"
+			}]
+		}
+	]
+}

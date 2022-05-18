@@ -1,0 +1,96 @@
+{
+	id: "362B7C2007168074"
+	group: "229EFEB70387AF4B"
+	order_index: 4
+	filename: "farmer"
+	title: "Farmer"
+	icon: "kubejs:profession_token_farmer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: -2.0d
+			id: "45A299DB0A9C05C0"
+			tasks: [{
+				id: "2E790FBC2F93A358"
+				type: "item"
+				item: {
+					id: "farmersdelight:flint_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			dependencies: ["45A299DB0A9C05C0"]
+			id: "102B6240FFB28A71"
+			tasks: [{
+				id: "459784B8C829E551"
+				type: "item"
+				item: "farmersdelight:canvas"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["02A5C931C2D2387D"]
+			id: "796899518D05B6FC"
+			tasks: [{
+				id: "40C8D8654C8811FF"
+				type: "item"
+				item: "farmersdelight:tree_bark"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			id: "02A5C931C2D2387D"
+			tasks: [{
+				id: "641EE582A20F6410"
+				type: "item"
+				item: "farmersdelight:cutting_board"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["796899518D05B6FC"]
+			id: "5C76335CB94843D6"
+			tasks: [{
+				id: "702F4D0588C985C6"
+				type: "item"
+				item: "minecraft:paper"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			dependencies: [
+				"102B6240FFB28A71"
+				"5C76335CB94843D6"
+			]
+			id: "41926400595EDCBD"
+			tasks: [{
+				id: "3F4EDD739BE43A2A"
+				type: "item"
+				item: "minecraft:book"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "355CC5767FD683FE"
+			tasks: [{
+				id: "773895CA503FB671"
+				type: "item"
+				item: "kubejs:profession_token_farmer"
+				consume_items: true
+			}]
+		}
+	]
+}

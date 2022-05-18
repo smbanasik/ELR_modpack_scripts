@@ -1,0 +1,34 @@
+{
+	id: "558571F96AD06030"
+	group: "229EFEB70387AF4B"
+	order_index: 3
+	filename: "hunter"
+	title: "Hunter"
+	icon: "kubejs:profession_token_hunter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.5d
+			y: -1.0d
+			id: "5937D81494C67D64"
+			tasks: [{
+				id: "22675C5DDE93C98E"
+				type: "kill"
+				entity: "minecraft:zombie"
+				value: 5L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "6C1E3C6F01F19075"
+			tasks: [{
+				id: "475A2C6FECC6AE0B"
+				type: "item"
+				item: "kubejs:profession_token_hunter"
+				consume_items: true
+			}]
+		}
+	]
+}
