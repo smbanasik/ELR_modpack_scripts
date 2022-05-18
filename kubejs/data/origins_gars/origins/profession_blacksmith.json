@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"origins_gars:starting_equip_blacksmith"
+	],
+    "icon": "kubejs:profession_token_blacksmith",
+    "order": 5,
+    "impact": 0,
+    "name": "Blacksmith",
+    "description": "Making tools has been your calling. The different types of materials and parts, the combinations that could be made. Your ultimate goal is to make the greatest tools known to mankind."
+}

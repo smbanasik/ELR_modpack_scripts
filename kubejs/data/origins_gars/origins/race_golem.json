@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"origins_gars:not_organic",
+		"origins_gars:golem_battery",
+		"origins_gars:golem_heal",
+		"origins_gars:golem_food",
+		"origins_gars:golem_waterdebuff",
+		"origins_gars:soulless_entity",
+		"origins_gars:super_dense"
+	],
+    "icon": "minecraft:iron_block",
+    "order": 2,
+    "impact": 3,
+    "name": "Golem",
+    "description": "A lonely body long lost by their owner..."
+}

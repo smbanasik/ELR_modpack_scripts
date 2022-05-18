@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"origins:water_vulnerability",
+		"origins_gars:paper_weight",
+		"origins_gars:written_flesh",
+		"origins_gars:book_clippings",
+		"origins_gars:flammable_body",
+		"origins_gars:librus_culture"
+	],
+	"icon": "minecraft:book",
+	"order": 1,
+	"impact": 2,
+	"name": "Librus",
+	"description": "An inquisitive race with a desire to document..."
+}

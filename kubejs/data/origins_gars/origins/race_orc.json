@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"origins_gars:unnatural_swimmer",
+		"origins_gars:brute_strength",
+		"origins_gars:ravenous_hunger",
+		"origins_gars:orc_culture"
+	],
+    "icon": "minecraft:chiseled_polished_blackstone",
+    "order": 1,
+    "impact": 1,
+    "name": "Orc",
+    "description": "A brutish race with a long forgotten history..."
+}

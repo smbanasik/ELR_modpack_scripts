@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"origins_gars:starting_equip_hunter"
+	],
+    "icon": "kubejs:profession_token_hunter",
+    "order": 3,
+    "impact": 0,
+    "name": "Hunter",
+    "description": "Killing. Ranching. Fishing. It's all within the scope of your work. Do it for money, do it for fun."
+}

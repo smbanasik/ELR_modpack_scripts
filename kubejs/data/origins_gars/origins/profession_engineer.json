@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"origins_gars:starting_equip_engineer"
+	],
+    "icon": "kubejs:profession_token_engineer",
+    "order": 1,
+    "impact": 0,
+    "name": "Engineer",
+    "description": "You were always enraptured by machinery since the moment you first layed eyes on it. This choice represents the culmination of months doing research and understanding the way of the machine."
+}

@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"origins_gars:starting_equip_farmer"
+	],
+    "icon": "kubejs:profession_token_farmer",
+    "order": 4,
+    "impact": 0,
+    "name": "Farmer",
+    "description": "You've always had a green thumb. Farming, raising bees, making do with what you have. Nature is just waiting for you to take hold of it."
+}

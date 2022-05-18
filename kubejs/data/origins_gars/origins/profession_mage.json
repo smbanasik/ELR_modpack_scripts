@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"origins_gars:starting_equip_mage"
+	],
+    "icon": "kubejs:profession_token_mage",
+    "order": 2,
+    "impact": 0,
+    "name": "Mage",
+    "description": "Since a child you've had an affinity for magic. You loved the way you could twist the laws of the universe to your whim, the untold knowledge you could discover."
+}

@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"origins_gars:rabbit_diet",
+		"origins_gars:quick_traveler",
+		"origins_gars:frail_body",
+		"origins_gars:weak_stature",
+		"origins_gars:elven_accuracy"
+	],
+    "icon": "minecraft:bow",
+    "order": 1,
+    "impact": 1,
+    "name": "Elf",
+    "description": "A skittish race isolated by an elusive society..."
+}

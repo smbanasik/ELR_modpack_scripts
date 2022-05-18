@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"origins_gars:heated_blood",
+		"origins_gars:fireproof_scales",
+		"origins_gars:frail_body",
+		"origins_gars:impish_antics",
+		"origins_gars:advanced_homeostasis",
+		"origins_gars:unnatural_swimmer",
+		"origins_gars:underling_culture",
+		"origins:nether_spawn"
+	],
+    "icon": "minecraft:crying_obsidian",
+    "order": 2,
+    "impact": 3,
+    "name": "Underling",
+    "description": "A nefarious race who are masters of dark magic..."
+}

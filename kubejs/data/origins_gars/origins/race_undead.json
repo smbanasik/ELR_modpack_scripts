@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"origins_gars:crypt_dweller",
+		"origins_gars:unholy_weakling",
+		"origins_gars:keen_nose",
+		"origins_gars:undead_waterdebuff",
+		"origins_gars:undead_resourcefullness",
+		"origins:carnivore"
+	],
+	"icon": "minecraft:bone",
+	"order": 2,
+	"impact": 2,
+	"name": "Undead",
+	"description": "A soul trapped inside of a decayed body. Forced to live once again in torment..."
+}
