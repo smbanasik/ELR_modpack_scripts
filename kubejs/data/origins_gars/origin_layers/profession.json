@@ -1,0 +1,11 @@
+{
+    "order": 2,
+    "origins": [
+		"origins:human",
+		"origins_gars:profession_engineer",
+		"origins_gars:profession_mage"
+    ],
+    "name": "Profession",
+    "missing_name": "Wanderer",
+    "missing_description": "You currently don't have a profession selected."
+}
