@@ -296,7 +296,7 @@ onEvent('recipes', event => {
 	})
 	
 	event.remove({id: 'create:crafting/kinetics/deployer'})
-	event.shaped('create:mechanical_mixer', [
+	event.shaped('create:deployer', [
 		' MH',
 		' W '
 	], {
@@ -305,8 +305,8 @@ onEvent('recipes', event => {
 		H: 'create:brass_hand'
 	})
 	
-	event.remove({id: 'create:crafting/kinetics/deployer'})
-	event.shaped('create:mechanical_mixer', [
+	event.remove({id: 'create:crafting/kinetics/mechanical_crafter'})
+	event.shaped('create:mechanical_crafter', [
 		' MH',
 		' C '
 	], {
@@ -315,15 +315,26 @@ onEvent('recipes', event => {
 		C: 'minecraft:crafting_table'
 	})
 	
-	event.remove({id: 'create:crafting/kinetics/deployer'})
-	event.shaped('create:mechanical_mixer', [
-		' MH',
-		' C '
-	], {
-		H: Item.of('immersiveengineering:hammer').ignoreNBT(),
-		M: 'kubejs:brass_machine',
-		C: 'minecraft:crafting_table'
+	event.recipes.createMixing('2x kubejs:redmonite_powder', [
+	'#forge:dusts/redstone',
+	'#forge:dusts/diamond'
+	]).superheated()
+	
+	event.remove({id: 'createaddition:crafting/capacitor_1'})
+	event.remove({id: 'createaddition:crafting/capacitor_2'})
+	event.recipes.createMechanicalCrafting('createaddition:capacitor', [
+		' C ',
+		'ARA',
+		'ARA',
+		'ZTZ'
+	],  {
+		 C: '#forge:plates/copper',
+		 A: '#forge:plates/aluminum',
+		 R: 'kubejs:redmonite_powder',
+		 Z: '#forge:plates/zinc',
+		 T: 'minecraft:redstone_torch'
 	})
+
 	
 	// Create ImmersiveEng Compat
 	
