@@ -1,0 +1,132 @@
+{
+    "type": "origins:multiple",
+	"golem_sink": {
+		"type": "origins:ignore_water"
+	},
+	"golem_waterslow": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": -0.075
+		},
+		"tick_rate": 60,
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water"
+				},
+				{
+					"type": "origins:in_rain"
+				}
+			]
+		}
+	},
+	"golem_waterairslow": {
+		"type": "origins:modify_air_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.9
+		},
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water"
+				},
+				{
+					"type": "origins:in_rain"
+				}
+			]
+		}
+	},
+	"golem_wateroverlay": {
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/block/weathered_copper.png",
+		"strength": 0.40,
+		"red": 1.0,
+		"green": 0.5,
+		"blue": 0.5,
+		"draw_mode": "texture",
+		"draw_phase": "below_hud",
+		"hide_with_hud": false,
+		"visible_in_third_person": true,
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water"
+				},
+				{
+					"type": "origins:in_rain"
+				}
+			]
+		}
+	},
+	"golem_waterenergydrain": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "origins_gars:golem_battery_battery_resource",
+			"change": -6
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water"
+				},
+				{
+					"type": "origins:in_rain"
+				}
+			]
+		}
+	},
+	"golem_waterhurt": {
+		"type": "origins:damage_over_time",
+		"interval": 20,
+		"damage": 4,
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:submerged_in",
+							"fluid": "minecraft:water"
+						},
+						{
+							"type": "origins:resource",
+							"resource": "origins_gars:golem_battery_battery_resource",
+							"comparison": "==",
+							"compare_to": 0
+						}
+					]
+				},
+				{
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:in_rain"
+						},
+						{
+							"type": "origins:resource",
+							"resource": "origins_gars:golem_battery_battery_resource",
+							"comparison": "==",
+							"compare_to": 0
+						}
+					]
+				}
+			]
+		}
+	},
+	"name": "Mechanical Skin",
+	"description": "You sink in water. You rust in water. Water bad."
+}

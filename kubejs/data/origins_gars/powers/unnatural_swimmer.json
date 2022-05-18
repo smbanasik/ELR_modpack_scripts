@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_swim_speed",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": -0.5
+	},
+    "name": "Unnatural Swimmer",
+    "description": "Your race is not built for swimming, you move slower in water."
+}

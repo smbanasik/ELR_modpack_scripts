@@ -1,0 +1,23 @@
+{
+	"type": "origins:multiple",
+	"arrow": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"operation": "addition",
+			"value": 4.0
+		}
+	},
+	"spectral": {
+		"type": "origins:modify_projectile_damage",
+		"damage_condition": {
+			"type": "origins:projectile",
+			"projectile": "minecraft:spectral_arrow"
+		},
+		"modifier": {
+			"operation": "addition",
+			"value": 2.0
+		}
+	},
+	"name": "Elven Accuracy",
+	"description": "Your race is extremely proficient with bows, capable of exploiting weakspots with your arrows."
+}

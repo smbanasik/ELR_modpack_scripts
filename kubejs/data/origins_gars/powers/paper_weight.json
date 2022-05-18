@@ -1,0 +1,23 @@
+{
+    "type": "origins:multiple",
+	"librus_fallspeed": {
+		"type": "origins:modify_falling",
+		"velocity": 0.01,
+		"take_fall_damage": false,
+		"condition": {
+			"type": "origins:sneaking"
+		}
+	},
+	"librus_glide": {
+		"type": "origins:modify_air_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1.65
+		},
+		"condition": {
+			"type": "origins:sneaking"
+		}
+	},
+	"name": "Paper Weight",
+	"description": "You glide and have better air control when sneaking."
+}

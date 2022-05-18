@@ -1,0 +1,12 @@
+{
+    "type": "origins:freeze",
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:precipitation",
+            "precipitation": "snow"
+        }
+    },
+	"name": "Heated Blood",
+	"description": "Your race is not used to cold areas. If it rains snow, you freeze in the biome."
+}

@@ -1,0 +1,13 @@
+{
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 2.0,
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:lava",
+        "comparison": ">",
+        "compare_to": 0.0
+    },
+	"name": "Advanced Homeostasis",
+	"description": "Your race gets hungrier while touching lava to keep you alive."
+}

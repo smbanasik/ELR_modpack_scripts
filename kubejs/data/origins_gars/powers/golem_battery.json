@@ -1,0 +1,67 @@
+{
+	"type": "origins:multiple",
+	"battery_resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"hud_render": {
+			"should_render": true,
+			"bar_index": 2
+		}
+	},
+	"battery_charge": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:equipped_item_action",
+					"equipment_slot": "mainhand",
+					"action": {
+						"type": "origins:consume",
+						"amount": 1
+					}
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "origins_gars:golem_battery_battery_resource",
+					"change": 5
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:block.end_portal_frame.fill",
+					"volume": 0.5,
+					"pitch": 1.5
+				}
+			]
+		},
+		"cooldown": 20,
+		"key": {
+			"key": "key.use",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:charcoal"
+							}
+						}
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins_gars:golem_battery_battery_resource",
+					"comparison": "!=",
+					"compare_to": 100
+				}
+			]
+		}
+	},
+	"name": "Golem Battery",
+	"description": "Deep within, each member of your race holds a battery. Feed it using charcoal."
+}

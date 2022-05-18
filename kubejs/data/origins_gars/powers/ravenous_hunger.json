@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_exhaustion",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": 0.5
+	},
+    "name": "Ravenous Hunger",
+    "description": "Your race requires more food than others."
+}

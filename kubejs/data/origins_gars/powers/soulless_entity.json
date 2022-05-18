@@ -1,0 +1,9 @@
+{
+	"type": "origins:modify_xp_gain",
+	"modifier": {
+		"operation": "multiply_total",
+		"value": -1
+	},
+	"name": "Soulless Being",
+	"description": "Your race has no soul and can gain no experience from orbs."
+}

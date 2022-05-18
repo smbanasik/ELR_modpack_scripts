@@ -1,0 +1,13 @@
+{
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:set_on_fire",
+		"duration": 2
+    },
+    "damage_condition": {
+        "type": "origins:fire"
+    },
+    "cooldown": 20,
+	"name": "Flammable Body",
+	"description": "Your race has a body that does not extinguish naturally."
+}

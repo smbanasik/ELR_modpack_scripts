@@ -1,0 +1,48 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:feed",
+				"food": 3,
+				"saturation": 0.25
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "origins_gars:golem_battery_battery_resource",
+				"change": -5
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.player.burp",
+				"volume": 0.5,
+				"pitch": 0.5
+			}
+		]
+	},
+	"cooldown": 30,
+	"key": {
+		"key": "key.sneak",
+		"continuous": true
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "origins_gars:golem_battery_battery_resource",
+				"comparison": ">=",
+				"compare_to": 10
+			},
+			{
+				"type": "origins:food_level",
+				"comparison": "<",
+				"compare_to": 20
+			}
+		]
+		
+	},
+	"name": "Golem Feed",
+	"description": "Sneak to enter a low energy mode, consume energy to nourish yourself."
+}

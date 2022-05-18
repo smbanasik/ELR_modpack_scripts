@@ -1,0 +1,51 @@
+{
+    "type": "origins:multiple",
+	"undead_diet": {
+		"type": "origins:modify_food",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:rotten_flesh"
+			}
+		},
+		"food_modifier": {
+			"operation": "addition",
+			"value": 2.0
+		},
+		"saturation_modifier": {
+			"operation": "addition",
+			"value": 0.5
+		},
+		"prevent_effects": true
+	},
+	"undead_hunger_immune": {
+		"type": "origins:effect_immunity",
+		"effect": "minecraft:hunger"
+	},
+	"undead_flesh_craft": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "origins_gars:undead_flesh_log",
+			"type": "minecraft:crafting_shapeless",
+			"ingredients": [
+				{
+					"item": "minecraft:bone"
+				},
+				{
+					"item": "minecraft:bone"
+				},
+				{
+					"item": "minecraft:rotten_flesh"
+				},
+				{
+					"item": "minecraft:rotten_flesh"
+				}
+			],
+			"result": {
+				"item": "minecraft:crimson_stem"
+			}
+		}
+	},
+	"name": "Undead Resourcefullness",
+	"description": "You are immune to hunger effects, you are carnivorous, and you are able to benefit from rotten flesh. You are able to craft hardened flesh with the same properties as a wooden log with two rotten flesh and two bones."
+}

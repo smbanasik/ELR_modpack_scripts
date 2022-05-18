@@ -1,0 +1,16 @@
+{
+    "type": "origins:starting_equipment",
+    "stacks": [
+		{
+			"item": "kubejs:profession_token_farmer"
+		},
+        {
+            "item": "minecraft:water_bucket"
+        },
+        {
+            "item": "minecraft:iron_hoe"
+        }
+	],
+	"name": "Starting Equipment",
+	"description": "You've brought a water bucket and a hoe with you."
+}

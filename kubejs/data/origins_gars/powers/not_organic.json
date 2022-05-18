@@ -1,0 +1,14 @@
+{
+    "type": "origins:multiple",
+    "no_diet": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:food"
+		}
+	},
+	"no_regen": {
+		"type": "origins:disable_regen"
+	},
+	"name": "Inorganic Being",
+	"description": "You cannot eat food. You do not regenerate health."
+}

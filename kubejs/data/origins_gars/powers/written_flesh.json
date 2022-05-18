@@ -1,0 +1,9 @@
+{
+	"type": "origins:modify_xp_gain",
+	"modifier": {
+		"operation": "multiply_total",
+		"value": 0.5
+	},
+	"name": "Written Flesh",
+	"description": "Your race has highly developed memory and gains extra experience from orbs."
+}

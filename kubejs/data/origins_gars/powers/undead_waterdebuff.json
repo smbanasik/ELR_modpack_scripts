@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.75
+    },
+	"name": "Decayed Swimmer",
+	"description": "Your race's flesh is not suited to swimming. You move much slower in water. While you don't need to breathe, if you stay too long water will seep into you and ruin what's left of your corpse."
+}

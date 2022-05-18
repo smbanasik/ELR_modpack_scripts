@@ -1,0 +1,48 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:heal",
+				"amount": 6
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "origins_gars:golem_battery_battery_resource",
+				"change": -10
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:block.anvil.use",
+				"volume": 0.5,
+				"pitch": 0.5
+			}
+		]
+	},
+	"cooldown": 200,
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": true
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "origins_gars:golem_battery_battery_resource",
+				"comparison": ">=",
+				"compare_to": 10
+			},
+			{
+				"type": "origins:health",
+				"comparison": "<",
+				"compare_to": 20
+				
+			}
+		]
+		
+	},
+	"name": "Golem Heal",
+	"description": "Your primary ability, consume energy to heal yourself."
+}

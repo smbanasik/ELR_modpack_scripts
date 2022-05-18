@@ -1,0 +1,104 @@
+{
+    "type": "origins:multiple",
+    "orc_blackstone": {
+        "type": "origins:item_on_item",
+        "on_item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:cobbled_deepslate"
+			}
+		},
+		"using_item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:charcoal"
+			}
+		},
+		"result": {
+			"item": "minecraft:blackstone",
+			"amount": 4
+		},
+		"using_item_action": {
+			"type": "origins:consume",
+			"amount": 1
+		},
+		"on_item_action": {
+			"type": "origins:consume",
+			"amount": 1
+		},
+		"entity_action": {
+			"type": "origins:swing_hand"
+		}
+    },
+	"bone_pick": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "origins_gars:orc_bone_pick",
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				"###",
+				" S ",
+				" S "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:bone"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:iron_pickaxe"
+			}
+		}
+	},
+	"bone_axe": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "origins_gars:orc_bone_axe",
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				"##",
+				"S#",
+				"S "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:bone"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:iron_axe"
+			}
+		}
+	},
+	"bone_sword": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "origins_gars:orc_bone_sword",
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				"#",
+				"#",
+				"S"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:bone"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:iron_sword"
+			}
+		}
+	},
+	"name": "Orc Culture",
+    "description": "Craft some bone tools and create blackstone by right clicking cobbled deepslate with charcoal."
+}

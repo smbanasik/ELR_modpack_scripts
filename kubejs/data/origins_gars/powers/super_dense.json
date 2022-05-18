@@ -1,0 +1,7 @@
+{
+	"type": "origins:modify_falling",
+	"velocity": 0.16,
+	"take_fall_damage": true,
+	"name": "Super Dense",
+	"description": "Your race is made out of dense materials. You fall much faster and take damage sooner."
+}

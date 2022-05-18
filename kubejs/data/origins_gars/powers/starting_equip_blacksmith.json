@@ -1,0 +1,16 @@
+{
+    "type": "origins:starting_equipment",
+    "stacks": [
+		{
+			"item": "kubejs:profession_token_blacksmith"
+		},
+        {
+            "item": "silentgear:starter_blueprints"
+        },
+        {
+            "item": "minecraft:anvil"
+        }
+    ],
+	"name": "Starting Equipment",
+	"description": "You start with a package of blueprints and an anvil."
+}

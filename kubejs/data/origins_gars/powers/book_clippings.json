@@ -1,0 +1,137 @@
+{
+	"type": "origins:multiple",
+	"leather_meter": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 9,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"shear_leather": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:equipped_item_action",
+					"equipment_slot": "mainhand",
+					"action": {
+						"type": "origins:damage",
+						"amount": 1
+					}
+				},
+				{
+					"type": "origins:give",
+					"stack": {
+					  "item": "minecraft:leather",
+					  "amount": 1
+					}
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "origins_gars:book_clippings_leather_meter",
+					"change": -9
+				},
+				{
+					"type": "origins:damage",
+					"amount": 2,
+					"source": {
+						"name": "cactus",
+						"bypasses_armor": true
+					}
+				}
+			]
+		},
+		"cooldown": 20,
+		"key": {
+			"key": "key.use",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:shears"
+							}
+						}
+				},
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins_gars:book_clippings_leather_meter",
+					"comparison": "==",
+					"compare_to": 9
+				}
+			]
+		}
+	},
+	"shear_paper": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:equipped_item_action",
+					"equipment_slot": "mainhand",
+					"action": {
+						"type": "origins:damage",
+						"amount": 1
+					}
+				},
+				{
+					"type": "origins:give",
+					"stack": {
+					  "item": "minecraft:paper",
+					  "amount": 3
+					}
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "origins_gars:book_clippings_leather_meter",
+					"change": 1
+				},
+				{
+					"type": "origins:damage",
+					"amount": 1,
+					"source": {
+						"name": "cactus",
+						"bypasses_armor": true
+					}
+				}
+			]
+		},
+		"cooldown": 20,
+		"key": {
+			"key": "key.use",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:shears"
+							}
+						}
+				},
+				{
+					"type": "origins:sneaking"
+				}
+			]
+		}
+	},
+	"name": "Book Clippings",
+	"description": "Your race can shear while shifting off paper for a small price of half a heart. Every 9 will give you a piece of leather."
+}

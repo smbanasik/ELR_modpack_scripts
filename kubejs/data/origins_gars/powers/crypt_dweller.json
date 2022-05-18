@@ -1,0 +1,54 @@
+{
+    "type": "origins:multiple",
+    "undead_spawn": {
+		"type": "origins:modify_player_spawn",
+		"dimension": "minecraft:overworld",
+		"structure": "minecraft:mineshaft",
+		"spawn_strategy": "center"
+	},
+    "undead_nightvision": {
+		"type": "origins:stacking_status_effect",
+        "min_stacks": -3,
+        "max_stacks": 1,
+        "duration_per_stack": 260,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:night_vision",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+            "type": "origins:exposed_to_sky",
+            "inverted": true
+        }
+    },
+	"undead_brightvision": {
+		"type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 4,
+        "duration_per_stack": 80,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:blindness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        },
+        "condition": {
+			 "type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:brightness",
+						"comparison": ">=",
+						"compare_to": 0.3
+					},
+					{    
+						"type": "origins:exposed_to_sky"
+					}
+				]
+        }
+    },
+	"name": "Crypt Dweller",
+	"description": "Your race dwells in old abandoned structures. You can see better in the dark, however, the holy moon obscures this. Additionally, light will blind you."
+}

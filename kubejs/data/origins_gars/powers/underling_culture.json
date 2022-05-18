@@ -1,0 +1,70 @@
+{
+    "type": "origins:multiple",
+    "underling_rawsoulstone": {
+        "type": "origins:item_on_item",
+        "on_item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "quark:soul_sandstone"
+			}
+		},
+		"using_item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:ender_eye"
+			}
+		},
+		"result": {
+			"item": "malum:raw_soulstone",
+			"amount": 1
+		},
+		"using_item_action": {
+			"type": "origins:consume",
+			"amount": 1
+		},
+		"on_item_action": {
+			"type": "origins:consume",
+			"amount": 1
+		},
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "minecraft:instant_damage",
+				"duration": 5,
+				"amplifier": 1
+			}
+		}
+    },
+	"underling_runewood": {
+        "type": "origins:item_on_item",
+        "on_item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:logs"
+			}
+		},
+		"using_item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "byg:embur_gel_ball"
+			}
+		},
+		"result": {
+			"item": "malum:exposed_runewood_log",
+			"amount": 1
+		},
+		"using_item_action": {
+			"type": "origins:consume",
+			"amount": 1
+		},
+		"on_item_action": {
+			"type": "origins:consume",
+			"amount": 1
+		},
+		"entity_action": {
+			"type": "origins:swing_hand"
+		}
+    },
+	"name": "Underling Culture",
+    "description": "Use an Eye of Ender on Soul Sandstone to make Raw Soulstone, your own sacrifice is needed. Use Embur Gel Balls on Soul Shroom Stems to make Runewood Logs."
+}

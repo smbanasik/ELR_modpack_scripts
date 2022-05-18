@@ -1,0 +1,28 @@
+{
+	"type": "origins:recipe",
+	"recipe": {
+		"id": "origins_gars:librus_umbrella",
+		"type": "minecraft:crafting_shaped",
+		"pattern": [
+			"BHB",
+			" S ",
+			" S "
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:enchanted_book"
+			},
+			"S": {
+				"tag": "forge:bookshelves"
+			},
+			"H": {
+				"item": "minecraft:shield"
+			}
+		},
+		"result": {
+			"item": "artifacts:umbrella"
+		}
+	},
+	"name": "Librus Culture",
+	"description": "Craft umbrellas by putting two enchanted books and a shield in the top row, and two bookshelves as the shaft. The shield is in the middle of the top row."
+}
