@@ -47,6 +47,9 @@ onEvent('item.registry', event => {
 	event.create('brass_machine')
 	.displayName('Brass Machine')
 	
+	event.create('redmonite_powder')
+	.displayName('Redmonite Powder')
+	
 })
 
 onEvent('block.registry', event => {
