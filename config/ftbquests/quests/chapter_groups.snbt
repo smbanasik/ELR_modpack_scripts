@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "36A4E430F88DF8E0", title: "General Quests!" }
+		{ id: "1893967678EA1447", title: "Race Quest" }
+		{ id: "229EFEB70387AF4B", title: "Profession Quests" }
+	]
+}
