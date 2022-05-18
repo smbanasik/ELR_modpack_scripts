@@ -1,0 +1,16 @@
+{
+	"replace": true,
+    "order": 1,
+    "origins": [
+		"origins_gars:race_orc",
+		"origins_gars:race_elf",
+		"origins_gars:race_golem",
+		"origins_gars:race_underling",
+		"origins_gars:race_undead",
+		"origins_gars:race_librus",
+		"origins:human"
+    ],
+    "name": "Race",
+    "missing_name": "Abstract entity",
+    "missing_description": "You currently don't have a race selected... somehow."
+}
