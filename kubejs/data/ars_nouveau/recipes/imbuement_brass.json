@@ -1,0 +1,16 @@
+{
+  "type": "ars_nouveau:imbuement",
+  "input": {
+    "item": "create:zinc_ingot"
+  },
+  "output": "create:brass_ingot",
+  "count": 1,
+  "source": 500,
+  "pedestalItems": [
+   {
+      "item": {
+        "item": "minecraft:copper_ingot"
+      }
+   }
+  ]
+}
